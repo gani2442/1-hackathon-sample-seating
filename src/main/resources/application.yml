@@ -1,0 +1,27 @@
+debug: true
+server.port: 0
+ticket.price: 100.00
+tax.percentage: 2.00
+convenience.charge: 10.00
+
+
+logging:
+  level:
+    com.hcl: debug
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+# Disable feature detection by this undocumented parameter. Check the org.hibernate.engine.jdbc.internal.JdbcServiceImpl.configure method for more details.
+    properties.hibernate.temp.use_jdbc_metadata_defaults: false
+# Because detection is disabled you have to set correct dialect by hand.
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    datasource:
+      url: jdbc:postgresql://ec2-54-204-46-60.compute-1.amazonaws.com:5432/df2hcqnha2ee68
+      username: bjyotzmgtgxwjc
+      password: 67cccc49f90f0097f6e1e830f31741dc6fdb60af4c76d67514f902339a13c319
