@@ -5,4 +5,4 @@ This is a introduction sample exercise project, that demonstrate basic concepts 
 - Spring Boot
 - Heroku deployment
 - Flyway
-
+- JSP UI 
