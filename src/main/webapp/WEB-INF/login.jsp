@@ -15,8 +15,8 @@
 		}
 	}
 </script>
-</head>
-<body onload="onload()" bgcolor="orange">
+</head >
+<body onload="onload()">
 	<div class="modal-body row">
 		<div class="col-md-6">
 			<!--  Registration Start-->
