@@ -2,7 +2,6 @@ package com.krishna.seatbooking.dto;
 
 import java.util.Collection;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,8 +15,7 @@ import lombok.Data;
 public class Role {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(columnDefinition = "serial")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String name;
 

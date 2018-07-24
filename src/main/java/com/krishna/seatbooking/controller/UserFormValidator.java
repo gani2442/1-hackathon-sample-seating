@@ -16,7 +16,7 @@ import org.springframework.validation.Validator;
 import com.krishna.seatbooking.dto.UserForm;
 
 /**
- * @author Ganesh.P
+ * @author seethayya.n
  *
  */
 @Component

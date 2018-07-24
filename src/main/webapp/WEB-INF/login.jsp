@@ -10,12 +10,14 @@
 <script src="/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 	function onload() {
-		if (window.location.href.indexOf("logout") != -1) {
+		if (window.location.href.indexOf("registered") != -1) {
+			document.getElementById('message').innerHTML = 'Successfully Registered!. Please login';
+		} else if (window.location.href.indexOf("logout") != -1) {
 			document.getElementById('message').innerHTML = 'Successfully logged out';
 		}
 	}
 </script>
-</head >
+</head>
 <body onload="onload()">
 	<div class="modal-body row">
 		<div class="col-md-6">
@@ -72,7 +74,6 @@
 							<form:errors style="color: red" path="passwordConfirm"></form:errors>
 						</div>
 					</spring:bind>
-
 					<button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
 				</form:form>
 			</div>
@@ -95,6 +96,8 @@
 						<label for="pwd">Password:</label> <input type="password"
 							style="width: 18%;" class="form-control" id="pwd" name="password">
 					</div>
+					<input type="hidden" name="${_csrf.parameterName}"
+						value="${_csrf.token}" />
 					<button type="submit" class="btn btn-success">Submit</button>
 				</form>
 			</div>

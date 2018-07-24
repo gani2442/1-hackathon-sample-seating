@@ -23,7 +23,7 @@ import com.krishna.seatbooking.dto.User;
 import com.krishna.seatbooking.repository.UserRepository;
 
 /**
- * @author Ganesh.P
+ * @author seethayya.n
  *
  */
 @Service

@@ -11,7 +11,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Booking Seat App</title>
-<link rel="stylesheet" href="/css/common.css">
+<!-- <link href="/css/bootstrap.min.css" rel="stylesheet"> -->
+<link href="/css/common.css" rel="stylesheet">
+<!-- <script src="/js/jquery-2.2.1.min.js"></script> -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
@@ -21,7 +23,6 @@
 <script src="/js/seating-handler.js"></script>
 </head>
 <body>
-
 	<div class="container">
 		<h2>
 			Welcome <label style="color: blue;"> ${username}</label>
@@ -32,8 +33,10 @@
 		<div class="pull-right">
 			<ul class="nav navbar-nav">
 				<form method="POST" action="/logout">
+					<input type="hidden" name="${_csrf.parameterName}"
+						value="${_csrf.token}" />
 					<li><button type="submit" class="btn navbar-btn btn-danger"
-							id="logout">Logout</button></li>
+							id="logout">LogOut</button></li>
 				</form>
 			</ul>
 		</div>
