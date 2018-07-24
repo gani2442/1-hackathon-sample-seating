@@ -47,7 +47,7 @@
 		<div class="tab-content">
 
 			<div id="events" class="tab-pane fade in active">
-				<h3>Here are some of the events in your state</h3>
+				<h3><b>Events in your State</b></h3>
 				<div class="table-responsive">
 					<c:if test="${not empty sameStateEvents}">
 						<table class="table table-bordered"
@@ -83,10 +83,10 @@
 						</table>
 					</c:if>
 					<c:if test="${empty sameStateEvents}">
-						<h4 style="color: red;">No Events are available from your Country</h4>
+						<h4 style="color: red;">No Events are available from your state</h4>
 					</c:if>
 				</div>
-				<h3>Here are some of the events in other states</h3>
+				<h3><b>Events in other states</b></h3>
 				<div class="table-responsive">
 					<c:if test="${not empty otherStateEvents}">
 						<table class="table table-bordered"
@@ -122,7 +122,7 @@
 						</table>
 					</c:if>
 					<c:if test="${empty otherStateEvents}">
-						<h4 style="color: red;">No Events are available from Other Country</h4>
+						<h4 style="color: red;">No Events are available from Other States</h4>
 					</c:if>
 				</div>
 
