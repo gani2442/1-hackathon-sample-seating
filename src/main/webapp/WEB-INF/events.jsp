@@ -83,7 +83,7 @@
 						</table>
 					</c:if>
 					<c:if test="${empty sameStateEvents}">
-						<h4 style="color: red;">No same State Events</h4>
+						<h4 style="color: red;">No Events are available from your Country</h4>
 					</c:if>
 				</div>
 				<h3>Here are some of the events in other states</h3>
@@ -122,7 +122,7 @@
 						</table>
 					</c:if>
 					<c:if test="${empty otherStateEvents}">
-						<h4 style="color: red;">No other State Events</h4>
+						<h4 style="color: red;">No Events are available from Other Country</h4>
 					</c:if>
 				</div>
 
